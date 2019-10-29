@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * Created by 
+ * FrogoBox Inc License
+ * =========================================
+ * 
+ * Copyright (C) .      
+ * All rights reserved
+ * 
+ * Name     : Muhammad Faisal Amir
+ * E-mail   : faisalamircs@gmail.com
+ * Line     : bullbee117
+ * Phone    : 081357108568
+ * Majors   : D3 Teknik Informatika 2016
+ * Campus   : Telkom University
+ * 
+ * id.amirisback.frogobox
+ * 
+ -->
+
+<resources>
+
+    <dimen name="dimens_big">16dp</dimen>
+    <dimen name="dimens_medium">8dp</dimen>
+    <dimen name="dimens_small">4dp</dimen>
+    <dimen name="dimens_weight">0dp</dimen>
+
+    <dimen name="dimens_font_big">25sp</dimen>
+    <dimen name="dimens_font_medium">12sp</dimen>
+    <dimen name="dimens_font_medium_title">16sp</dimen>
+
+    <!--
+Refer to App Widget Documentation for margin information
+http://developer.android.com/guide/topics/appwidgets/index.html#CreatingLayout
+    -->
+    <dimen name="widget_margin">8dp</dimen>
+
+</resources>

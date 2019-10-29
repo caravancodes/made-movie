@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * Created by 
+ * FrogoBox Inc License
+ * =========================================
+ * 
+ * Copyright (C) .      
+ * All rights reserved
+ * 
+ * Name     : Muhammad Faisal Amir
+ * E-mail   : faisalamircs@gmail.com
+ * Line     : bullbee117
+ * Phone    : 081357108568
+ * Majors   : D3 Teknik Informatika 2016
+ * Campus   : Telkom University
+ * 
+ * id.amirisback.frogobox
+ * 
+ -->
+
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item
+        android:id="@+id/menu_now"
+        android:icon="@drawable/ic_nowplaying"
+        android:title="@string/title_nowplaying"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_up"
+        android:icon="@drawable/ic_upcoming"
+        android:title="@string/title_upcoming"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_search"
+        android:icon="@drawable/ic_search"
+        android:title="@string/title_search"
+        app:showAsAction="ifRoom"/>
+
+    <item
+        android:id="@+id/menu_favorites"
+        android:icon="@drawable/ic_star_menu"
+        android:title="@string/title_fav"
+        app:showAsAction="ifRoom"/>
+
+</menu>

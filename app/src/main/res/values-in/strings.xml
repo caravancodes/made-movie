@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<!--
+ * Created by 
+ * FrogoBox Inc License
+ * =========================================
+ * 
+ * Copyright (C) .      
+ * All rights reserved
+ * 
+ * Name     : Muhammad Faisal Amir
+ * E-mail   : faisalamircs@gmail.com
+ * Line     : bullbee117
+ * Phone    : 081357108568
+ * Majors   : D3 Teknik Informatika 2016
+ * Campus   : Telkom University
+ * 
+ * id.amirisback.frogobox
+ * 
+ -->
+
+<resources>
+
+    <string name="app_name">Katalog Film</string>
+    <string name="edit_text_cari">Nama Film</string>
+    <string name="button_cari">Cari</string>
+
+    <string name="view_overview">Ikhtisar</string>
+    <string name="view_rating">Peringkat</string>
+    <string name="view_popularity">Popularitas</string>
+
+    <string name="title_nowplaying">Sedang Tayang</string>
+    <string name="title_upcoming">Mendatang</string>
+    <string name="title_search">Cari</string>
+    <string name="title_favorite">Favorite</string>
+    <string name="title_detail">Detail Film</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Halo fragmen kosong</string>
+    <string name="dummy_string">palsu</string>
+    <string name="title_settings">Pengaturan</string>
+
+    <string name="title_fav">Favorit</string>
+    <string name="toast_add">Berhasil menambahkan</string>
+    <string name="toast_add_fail">Gagal menambahkan</string>
+    <string name="toast_remove">Berhasil menghapus</string>
+    <string name="toast_remove_fail">Gagal menghapus</string>
+
+    <string name="toast_no_internet">Tidak ada koneksi internet</string>
+    <string name="toast_fail_network">Gagal reload data</string>
+
+    <string name="view_empty_data">Data kosong</string>
+    <string name="title_view_list">View</string>
+    <string name="add_widget">Tambah widget</string>
+    <string name="notification_daily_reminder_title">Katalog Film</string>
+    <string name="notification_daily_reminder_text">Cek katalog movie sekarang!</string>
+    <string name="title_notif">Notification</string>
+    <string name="notification_on">Notification On</string>
+    <string name="notification_off">Notification Off</string>
+</resources>
