@@ -1,7 +1,9 @@
+![ScreenShoot Apps](https://raw.githubusercontent.com/amirisback/amirisback/master/docs/image/deprecated.png?raw=true)
+
 ## About This Project
 Final Submission MADE Dicoding 2018
 
-# Screenshoot
+## Screenshoot
 | SS 1 | SS 2 |
 | :---:|:----:|
 |<span align="center"><img width="200px" height="360px" src="docs/image/ss_1.png"></span> | <span align="center"><img width="200px" height="360px" src="docs/image/ss_2.png"></span> |
