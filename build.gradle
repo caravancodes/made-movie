@@ -1,13 +1,42 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
-    
+
+    ext {
+
+        // project settings
+        nameApp = "Catalogue Movie"
+
+        def appDomain = "id"
+        def appDevConsole = "frogobox"
+        def appName = "cataloguemovie"
+        def appFav = "favoritemovie"
+
+        def versionMajor = 1
+        def versionMinor = 0
+        def versionPatch = 0
+
+        projectCompileSdk = 31
+        projectMinSdk = 21
+        projectTargetSdk = projectCompileSdk
+
+        projectApplicationId = "$appDomain.$appDevConsole.$appName"
+        projectFavId = "$appDomain.$appDevConsole.$appFav"
+        projectVersionCode = (versionMajor * 100) + (versionMinor * 10) + (versionPatch * 1)
+        projectVersionName = "$versionMajor.$versionMinor.$versionPatch"
+
+        nameAPK = nameApp.toLowerCase().replace(" ", "-")
+
+    }
+
     repositories {
         google()
         jcenter()
+        mavenCentral()
     }
+
     dependencies {
-        classpath 'com.android.tools.build:gradle:4.2.1'
+        classpath 'com.android.tools.build:gradle:7.0.2'
         
 
         // NOTE: Do not place your application dependencies here; they belong
@@ -19,6 +48,7 @@ allprojects {
     repositories {
         google()
         jcenter()
+        mavenCentral()
         maven { url "https://jitpack.io" }
     }
 }

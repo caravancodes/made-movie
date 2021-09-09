@@ -10,6 +10,7 @@
     <permission
         android:name="id.frogobox.cataloguemovie.READ_DATABASE"
         android:protectionLevel="normal" />
+
     <permission
         android:name="id.frogobox.cataloguemovie.WRITE_DATABASE"
         android:protectionLevel="normal" />
@@ -22,7 +23,9 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity android:name=".views.activities.MainActivity">
+        <activity
+            android:name=".views.activities.MainActivity"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -37,7 +40,9 @@
                 android:value=".views.activities.MainActivity" />
         </activity>
 
-        <receiver android:name=".views.widgets.FavoriteBannerWidget">
+        <receiver
+            android:name=".views.widgets.FavoriteBannerWidget"
+            android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
@@ -47,7 +52,8 @@
                 android:resource="@xml/favorite_banner_widget_info" />
         </receiver>
 
-        <service android:name=".views.widgets.StackWidgetService"
+        <service
+            android:name=".views.widgets.StackWidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
 
         <provider
