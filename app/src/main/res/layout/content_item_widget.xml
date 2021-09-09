@@ -19,8 +19,7 @@
  * 
  -->
 
-<RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
@@ -30,17 +29,17 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:scaleType="fitXY"
-        android:src="@color/colorAccent"/>
+        android:src="@color/colorAccent" />
 
     <TextView
         android:id="@+id/textViewWidget"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/colorBackgroundText"
-        android:textColor="@color/colorTextWhite"
-        android:maxLines="2"
-        android:textSize="@dimen/dimens_font_medium_title"
         android:layout_alignParentBottom="true"
-        android:padding="@dimen/dimens_big"/>
+        android:background="@color/colorBackgroundText"
+        android:maxLines="2"
+        android:padding="@dimen/dimens_big"
+        android:textColor="@color/colorTextWhite"
+        android:textSize="@dimen/dimens_font_medium_title" />
 
 </RelativeLayout>

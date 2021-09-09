@@ -24,7 +24,7 @@
         android:theme="@style/AppTheme">
 
         <activity
-            android:name=".views.activities.MainActivity"
+            android:name=".ui.activities.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -33,15 +33,15 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".views.activities.DetailActivity"
-            android:parentActivityName=".views.activities.MainActivity">
+            android:name=".ui.activities.DetailActivity"
+            android:parentActivityName=".ui.activities.MainActivity">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
-                android:value=".views.activities.MainActivity" />
+                android:value=".ui.activities.MainActivity" />
         </activity>
 
         <receiver
-            android:name=".views.widgets.FavoriteBannerWidget"
+            android:name=".widgets.FavoriteBannerWidget"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
@@ -53,18 +53,18 @@
         </receiver>
 
         <service
-            android:name=".views.widgets.StackWidgetService"
+            android:name=".widgets.StackWidgetService"
             android:permission="android.permission.BIND_REMOTEVIEWS" />
 
         <provider
-            android:name=".models.databases.DataProvider"
+            android:name=".sources.local.DataProvider"
             android:authorities="id.frogobox.cataloguemovie"
             android:exported="true"
             android:readPermission="id.frogobox.cataloguemovie.READ_DATABASE"
             android:writePermission="id.frogobox.cataloguemovie.WRITE_DATABASE" />
 
         <receiver
-            android:name=".views.notifications.AlarmReceiver"
+            android:name=".utils.AlarmReceiver"
             android:enabled="true"
             android:exported="true" />
 

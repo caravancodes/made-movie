@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBackground">
+    android:background="@color/colorTextWhite">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -12,16 +11,16 @@
         android:orientation="vertical">
 
         <androidx.cardview.widget.CardView
-            android:layout_marginTop="@dimen/dimens_medium"
-            android:layout_marginRight="@dimen/dimens_small"
-            android:layout_marginLeft="@dimen/dimens_small"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimens_medium"
+            android:layout_marginTop="@dimen/dimens_medium"
+            android:layout_marginRight="@dimen/dimens_medium">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="@dimen/dimens_medium">
+                android:layout_margin="@dimen/dimens_big">
 
                 <EditText
                     android:id="@id/mainEditTextCari"
@@ -35,19 +34,22 @@
                     android:id="@id/mainButtonCari"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimens_big"
+                    android:background="@drawable/background_button"
                     android:text="@string/button_cari"
-                    android:textColor="#FFFFFF"
-                    android:background="@drawable/background_button"/>
+                    android:textColor="#FFFFFF" />
 
             </LinearLayout>
 
         </androidx.cardview.widget.CardView>
 
         <androidx.recyclerview.widget.RecyclerView
-            android:layout_marginTop="@dimen/dimens_small"
             android:id="@id/searchRecyclerView"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
+            android:clipToPadding="false"
+            android:paddingTop="@dimen/dimens_medium"
+            android:paddingRight="@dimen/dimens_medium"
             tools:listitem="@layout/content_item_grid" />
 
     </LinearLayout>
@@ -56,6 +58,6 @@
         android:id="@+id/searchProgressBar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_centerInParent="true"/>
+        android:layout_centerInParent="true" />
 
 </RelativeLayout>

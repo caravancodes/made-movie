@@ -19,54 +19,53 @@
  * 
  -->
 
-<androidx.cardview.widget.CardView
-    xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-     android:layout_height="wrap_content"
     android:layout_width="match_parent"
-    android:layout_margin="@dimen/dimens_small">
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/dimens_medium"
+    android:layout_marginBottom="@dimen/dimens_medium">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_margin="@dimen/dimens_small">
+        android:layout_margin="@dimen/dimens_medium"
+        android:orientation="vertical">
 
         <ImageView
             android:id="@id/listPosterImageView"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="260dp"
             android:scaleType="fitXY" />
 
         <TextView
             android:id="@id/listTitleTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/dimens_font_medium_title"
-            tools:text="@string/dummy_string"
+            android:maxLines="1"
             android:textColor="@color/colorPrimary"
+            android:textSize="@dimen/dimens_font_medium_title"
             android:textStyle="bold"
-            android:maxLines="1"/>
+            tools:text="@string/dummy_string" />
 
         <TextView
             android:id="@id/listDateTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/dimens_font_medium"
             android:maxLines="1"
-            android:textStyle="italic"
             android:textColor="@color/colorAccent"
-            tools:text="@string/dummy_string"/>
+            android:textSize="@dimen/dimens_font_medium"
+            android:textStyle="italic"
+            tools:text="@string/dummy_string" />
 
         <TextView
             android:id="@id/listOverviewTextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/dimens_font_medium"
-            tools:text="@string/dummy_string"
+            android:maxLines="1"
             android:textColor="@color/colorTextPrimary"
-            android:maxLines="1"/>
+            android:textSize="@dimen/dimens_font_medium"
+            tools:text="@string/dummy_string" />
 
     </LinearLayout>
 
